@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         protected String doInBackground(String... urls) {
 
             Log.e("Yo", "Started");
-             String URL = "https://graph.facebook.com/"+Val.id+"/feed?since=0000&until=1234567899999999999990&access_token=" + Val.access;
+            String URL = "https://graph.facebook.com/109315262061/feed?since=0000000&until=1234567899999999999990&access_token=CAAGZAwVFNCKgBAKbW8MO08DGmwuzD2Pomuso15sTtJtcHdYyYNLUtdA3EhdgI2sn9KclItRplhSZAP0uqJQZCm16FIf9wLKAjSL6f4dZBgbrI7aScv5QZBSEaEFqXMbwviVkR6ZBmNIezLevS1mtHNZASdOk5mlRrOHCLHDZArJ5fYebJKI3Q2WzzXoieatdAWECN1lQSBYx94EXLKUcXeXB";
             HttpClient Client = new DefaultHttpClient();
             HttpGet httpget = new HttpGet(URL);
             ResponseHandler<String> responseHandler = new BasicResponseHandler();
@@ -223,9 +223,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             } catch (Exception e) {
 
             }
-
-
-
             Log.e("Yo", text);
         }
     }
@@ -258,8 +255,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         if (mDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
-
-
         return super.onOptionsItemSelected(item);
     }
 
